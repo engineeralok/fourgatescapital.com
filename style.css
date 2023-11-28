@@ -12,11 +12,13 @@
   --text-black: #000000;
   --text-white: #ffffff;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -25,12 +27,15 @@ html {
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 p {
   color: var(--text-normal);
 }
+
 button {
   outline: none;
   border: 0;
@@ -40,18 +45,22 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
 h2 {
   color: var(--text-heading);
   font-size: 2rem;
 }
+
 .container {
   width: 85vw;
   max-width: 1110px;
   margin: auto;
 }
+
 #logo {
   height: 1.4rem;
 }
+
 header {
   background-color: var(--bg-primary);
   position: fixed;
@@ -60,37 +69,45 @@ header {
   width: 100%;
   z-index: 999;
 }
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
 }
+
 .nav-items {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
+
 .nav-items ul {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
+
 .nav-items ul li a {
   color: var(--text-primary);
   font-weight: 500;
 }
+
 .nav-items ul li a:hover {
   color: var(--text-black);
 }
+
 .btn {
   padding: 8px 20px;
   border-radius: 10px;
 }
+
 .btn-dark {
   background-color: var(--btn-bg);
   color: var(--text-white);
 }
+
 #toggle-btn {
   z-index: 999;
   height: 2rem;
@@ -102,6 +119,7 @@ nav {
   #toggle-btn {
     display: block;
   }
+
   .nav-items {
     flex-direction: column;
     position: fixed;
@@ -114,9 +132,11 @@ nav {
     justify-content: center;
     transition: 0.5s ease;
   }
+
   .nav-items ul {
     flex-direction: column;
   }
+
   .-right-100 {
     right: -100%;
   }
@@ -135,23 +155,28 @@ nav {
   justify-content: space-between;
   height: 100%;
 }
+
 .home-container .home-left {
   flex: 1;
 }
+
 .home-container .home-left h1 {
   font-size: 3.2rem;
   color: var(--text-heading);
 }
+
 .home-container .home-left p {
   color: var(--text-normal);
   line-height: 2rem;
 }
+
 .home-container .home-right {
   flex: 1;
   height: 100%;
   display: flex;
   align-items: flex-end;
 }
+
 .home-right img {
   width: 100%;
   max-width: 550px;
@@ -164,14 +189,17 @@ nav {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+
   .home-container {
     flex-direction: column-reverse;
     gap: 2.5rem;
     text-align: center;
   }
+
   .home-container .home-left h1 {
     font-size: 2rem;
   }
+
   .home-container .home-left p {
     font-size: 0.9rem;
   }
@@ -181,22 +209,27 @@ nav {
 .about-container {
   padding: 5.5rem 0;
 }
+
 .about-rating {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .logo {
   height: 1.5rem;
 }
+
 .about-rating .stars {
   display: flex;
   justify-content: end;
   margin-bottom: 0.45rem;
 }
+
 .stars img {
   height: 1.3rem;
 }
+
 .about-companies {
   display: flex;
   flex-wrap: wrap;
@@ -205,24 +238,29 @@ nav {
   gap: 3.5rem;
   padding-top: 4rem;
 }
+
 .about-guidelines {
   padding: 3rem 0;
   text-align: center;
 }
+
 .about-guidelines--content h2 {
   color: var(--text-heading);
   font-size: 2.2rem;
   margin-bottom: 0.9rem;
 }
+
 .top-line {
   height: 0.35rem;
   border-radius: 0.35rem;
   width: 4rem;
   background-color: var(--text-heading);
 }
+
 .about-guidelines--content .top-line {
   margin: 0.5rem auto;
 }
+
 .guide-box {
   display: flex;
   flex-wrap: wrap;
@@ -230,14 +268,17 @@ nav {
   gap: 2rem 7rem;
   padding-top: 4rem;
 }
+
 .guide-box img {
   height: 3rem;
 }
+
 .guide-box h3 {
   font-weight: 600;
   font-size: 1.4rem;
   margin-top: 0.55rem;
 }
+
 .guide-box button {
   color: var(--text-blue);
 }
@@ -248,9 +289,11 @@ nav {
     text-align: center;
     justify-content: center;
   }
+
   .about-rating .stars {
     justify-content: center;
   }
+
   .about-guidelines--content h2 {
     font-size: 1.85rem;
   }
@@ -263,19 +306,23 @@ nav {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+
 .feature-container h2 {
   color: var(--text-heading);
   font-size: 2.2rem;
   margin-bottom: 0.9rem;
 }
+
 .feature-container div {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .arrow {
   width: 1.95rem;
 }
+
 .feature-container button {
   color: var(--text-blue);
 }
@@ -287,35 +334,53 @@ nav {
   gap: 2rem;
   justify-content: center;
 }
+
 .feature-box {
   background-color: #ffffff;
-  min-width: 340px;
-  max-width: 340px;
+  min-width: 240px;
+  max-width: 240px;
+  /* max-height: 380px; */
 }
 
 .feature-box .banner {
   width: 100%;
+  background-size: cover;
+  background-position: fill;
+
+}
+
+.banner img {
+  width: 100%;
+  max-height: 146px;
+  min-height: 146px;
 }
 
 .feature-box h4 {
   color: var(--text-heading);
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
+
 .feature-box p {
   font-size: 0.9rem;
   margin-bottom: 7px;
 }
+
 .feature-box-content-items {
-  display: flex;
+  display: none;
   gap: 1.3rem;
   margin-top: 10px;
 }
+
 .feature-box-content-items img {
   height: 1rem;
 }
+
 .feature-box-content-items div {
   font-weight: 500;
 }
+
 .feature-box-content {
   padding: 16px;
 }
@@ -324,9 +389,11 @@ nav {
   .feature-container h2 {
     font-size: 1.5rem;
   }
+
   #feature {
     padding: 2rem 0;
   }
+
   .feature-container div {
     gap: 1rem;
   }
@@ -337,30 +404,37 @@ nav {
   gap: 2.5rem;
   padding: 3rem 0;
 }
+
 .service-container div {
   flex: 1;
 }
+
 .service-container img {
   width: 100%;
   max-width: 450px;
 }
+
 .service-container .top-line {
   margin-top: 5rem;
 }
+
 .service-container p {
   margin-top: 10px;
   font-size: 0.83rem;
 }
+
 .service-counts {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
+
 .count {
   font-size: 2.5rem;
   font-weight: 600;
 }
+
 @media (max-width: 900px) {
   .service-container {
     flex-direction: column;
@@ -370,6 +444,7 @@ nav {
     margin-left: auto;
   }
 }
+
 .info-box {
   margin: 8rem auto;
   max-width: 60rem;
@@ -379,6 +454,7 @@ nav {
   padding: 6%;
   position: relative;
 }
+
 .info-box img {
   height: 26rem;
   position: absolute;
@@ -386,11 +462,13 @@ nav {
   object-fit: cover;
   right: 5rem;
 }
+
 .info-box h3 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
 .info-box button {
   background: white;
   color: var(--card-bg);
@@ -398,14 +476,17 @@ nav {
   margin-top: 2rem;
   padding: 0.8rem 1.2rem;
 }
+
 @media (max-width: 900px) {
   .info-box img {
     display: none;
   }
+
   .info-box {
     text-align: center;
     margin: 3rem auto;
   }
+
   .info-box h3 {
     font-size: 1.8rem;
   }
@@ -416,33 +497,40 @@ nav {
 footer {
   padding-top: 4rem;
 }
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: space-between;
 }
+
 .footer-container h3 {
   font-weight: 600;
   margin-bottom: 1.8rem;
 }
+
 .footer-container ul li a,
 .footer-container span {
   color: var(--text-primary);
   line-height: 2.4rem;
 }
+
 .footer-container div {
   max-width: 23rem;
 }
+
 .social-icons {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
+
 .social-icons img {
   object-fit: cover;
   height: 1.2rem;
 }
+
 .copyright {
   text-align: center;
   padding: 2rem 0;
