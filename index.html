@@ -1,371 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real-Estate Landing Page</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="container">
-        <!-- <img src="./assets/Logo.png" alt="Logo" id="logo" /> -->
-        <h2 >Four Gates Capital</h2>
-        <img
-          src="./assets/menu.svg"
-          alt="menu"
-          onclick="onToggle()"
-          id="toggle-btn"
-        />
-        <div class="nav-items -right-100">
-          <ul>
-            <li>
-              <a href="#home"><b>Home</b></a>
-            </li>
-            <!-- <li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Estate Landing Page</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <!-- <img src="./assets/Logo.png" alt="Logo" id="logo" /> -->
+      <h2>Four Gates Capital</h2>
+      <img src="./assets/menu.svg" alt="menu" onclick="onToggle()" id="toggle-btn" />
+      <div class="nav-items -right-100">
+        <ul>
+          <li>
+            <a href="#home"><b>Home</b></a>
+          </li>
+          <!-- <li>
               <a href="#feature">Feature</a>
             </li> -->
-            <li>
-              <a href="#service">Service</a>
-            </li>
-            <li>
-              <a href="#Residential">Residential</a>
-            </li>
-            <li>
-              <a href="#Commercial">Commercial</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#contact">contact</a>
-            </li>
-          </ul>
-          <!-- <div>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#Residential">Residential</a>
+          </li>
+          <li>
+            <a href="#Commercial">Commercial</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+        <!-- <div>
             <button class="btn">Sign up</button>
             <button class="btn btn-dark">Register</button>
           </div> -->
-        </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <section id="home">
-      <div class="container home-container">
-        <div class="home-left">
-          <p>Welcome to Four Gates Capital</p>
-          <h1>Discover a place you'll love to live.</h1>
+  <section id="home">
+    <div class="container home-container">
+      <div class="home-left">
+        <p>Welcome to Four Gates Capital</p>
+        <h1>Discover a place you'll love to live.</h1>
+        <p>
+          Four Gates Capital (FGC) is a privately held real estate investment firm. Your Partner in Real Estate Success
+          with FGC – Where Investment, Brokerage, and Property Management Converge.
+        </p>
+        <br /><br />
+        <button class="btn btn-dark">More About us</button>
+      </div>
+      <div class="home-right">
+        <img src="./assets/home.png" alt="home" />
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+
+
+  <!-- Feature -->
+  <section id="feature">
+    <div class="container">
+      <div class="feature-container">
+        <h2>Services</h2>
+        <div>
+          <p>FGC has been able to partner with and offer real estate services to third parties over the years.</p>
+          <button>
+            <span>View All Services</span>
+            <img class="arrow" src="./assets/arrow.png" alt="arrow" />
+          </button>
+        </div>
+      </div>
+      <div class="feature-imgs-container">
+        <!-- box 1 -->
+        <div class="feature-box">
+          <div class="banner">
+            <img src="./assets/invest_togather.jpg" alt="feature-1" />
+          </div>
+          <div class="feature-box-content">
+            <h4>Invest <br> Togather</h4>
+            <p>building new co-investing relationships</p>
+            <div class="feature-box-content-items">
+              <div>
+                <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
+                5 Beds
+              </div>
+              <div>
+                <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
+                2 both
+              </div>
+              <div>
+                <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
+                2000 Sqft
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- box 2 -->
+        <div class="feature-box">
+          <div class="banner">
+            <img src="./assets/panam_properties.jpg" alt="feature-1" />
+          </div>
+          <div class="feature-box-content">
+            <h4>BROKERAGE <br> SERVICES</h4>
+            <p>CA licensed real estate brokerage</p>
+            <div class="feature-box-content-items">
+              <div>
+                <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
+                5 Beds
+              </div>
+              <div>
+                <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
+                2 both
+              </div>
+              <div>
+                <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
+                2000 Sqft
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- box 3 -->
+        <div class="feature-box">
+          <div class="banner">
+            <img src="./assets/corporate_lease.jpg" alt="feature-1" />
+          </div>
+          <div class="feature-box-content">
+            <h4>CORPORATE LEASE <br> WITH SERVICES</h4>
+            <p>assisted Corporate tenants source rental properties</p>
+            <div class="feature-box-content-items">
+              <div>
+                <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
+                5 Beds
+              </div>
+              <div>
+                <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
+                2 both
+              </div>
+              <div>
+                <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
+                2000 Sqft
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- box 4 -->
+        <div class="feature-box">
+          <div class="banner">
+            <img src="./assets/property_management.jpg" alt="feature-1" />
+          </div>
+          <div class="feature-box-content">
+            <h4>PROPERTY <br> MANAGEMENT</h4>
+            <p>managed many of its own rental properties successfully</p>
+            <div class="feature-box-content-items">
+              <div>
+                <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
+                5 Beds
+              </div>
+              <div>
+                <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
+                2 both
+              </div>
+              <div>
+                <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
+                2000 Sqft
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="residential">
+    <div class="container">
+      <div class="residential-container">
+        <div class="residential-img">
+          <img src="./assets/residential.jpg" alt="residential" />
+        </div>
+        <div>
+          <div class="top-line"></div>
+          <h2>You've found a neighborhood where you live</h2>
           <p>
-            Four Gates Capital (FGC) is a privately held real estate investment firm. Your Partner in Real Estate Success with FGC – Where Investment, Brokerage, and Property Management Converge.
+            Transforming Homes, Creating Opportunities: Unleashing the Potential of Residential Real Estate Since 2008.
+            Here is an overview of how we may be able to work together.
           </p>
-          <br /><br />
-          <button class="btn btn-dark">More About us</button>
-        </div>
-        <div class="home-right">
-          <img src="./assets/home.png" alt="home" />
-        </div>
-      </div>
-    </section>
-    <!-- About -->
-    
-
-    <!-- Feature -->
-    <section id="feature">
-      <div class="container">
-        <div class="feature-container">
-          <h2>Services</h2>
-          <div>
-            <p>FGC has been able to partner with and offer real estate services to third parties over the years.</p>
-            <button>
-              <span>View All Services</span>
-              <img class="arrow" src="./assets/arrow.png" alt="arrow" />
-            </button>
-          </div>
-        </div>
-        <div class="feature-imgs-container">
-          <!-- box 1 -->
-          <div class="feature-box">
-            <div class="banner">
-                          <img src="./assets/invest_togather.jpg" alt="feature-1"/>
+          <br />
+          <button class="btn btn-dark">Learn More</button>
+          <br />
+          <div class="residential-counts">
+            <div>
+              <h3 class="count">2,500</h3>
+              <p>Homes for sale</p>
             </div>
-            <div class="feature-box-content">
-              <h4>Invest <br> Togather</h4>
-              <p>building new co-investing relationships</p>
-              <div class="feature-box-content-items">
-                <div>
-                  <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
-                  5 Beds
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
-                  2 both
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
-                  2000 Sqft
-                </div>
-              </div>
+            <div>
+              <h3 class="count">5000+</h3>
+              <p>Homes Recently Sold</p>
             </div>
-          </div>
-
-          <!-- box 2 -->
-          <div class="feature-box">
-            <div class="banner">
-                          <img src="./assets/panam_properties.jpg" alt="feature-1" />
-            </div>
-            <div class="feature-box-content">
-              <h4>BROKERAGE <br> SERVICES</h4>
-              <p>CA licensed real estate brokerage</p>
-              <div class="feature-box-content-items">
-                <div>
-                  <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
-                  5 Beds
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
-                  2 both
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
-                  2000 Sqft
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- box 3 -->
-          <div class="feature-box">
-            <div class="banner">
-                          <img src="./assets/corporate_lease.jpg" alt="feature-1" />
-            </div>
-            <div class="feature-box-content">
-              <h4>CORPORATE LEASE <br> WITH SERVICES</h4>
-              <p>assisted Corporate tenants source rental properties</p>
-              <div class="feature-box-content-items">
-                <div>
-                  <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
-                  5 Beds
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
-                  2 both
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
-                  2000 Sqft
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- box 4 -->
-          <div class="feature-box">
-            <div class="banner">
-                          <img src="./assets/property_management.jpg" alt="feature-1" />
-            </div>
-            <div class="feature-box-content">
-              <h4>PROPERTY <br> MANAGEMENT</h4>
-              <p>managed many of its own rental properties successfully</p>
-              <div class="feature-box-content-items">
-                <div>
-                  <img src="./assets/feature-icon-1.png" alt="feature-icon-1" />
-                  5 Beds
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-2.png" alt="feature-icon-2" />
-                  2 both
-                </div>
-                <div>
-                  <img src="./assets/feature-icon-3.png" alt="feature-icon-3" />
-                  2000 Sqft
-                </div>
-              </div>
+            <div>
+              <h3 class="count">120+</h3>
+              <p>Price Reduced</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="service">
-      <div class="container">
-        <div class="service-container">
-          <div>
-            <img src="./assets/service.png" alt="service" />
-          </div>
-          <div>
-            <div class="top-line"></div>
-            <h2>You've found a neighborhood you leave</h2>
-            <p>
-              Besnik has been able to partner with and offer real estate services to third parties over the years.  Here is an overview of how we may be able to work together.
-            </p>
-            <br />
-            <button class="btn btn-dark">Learn More</button>
-            <br />
-            <div class="service-counts">
-              <div>
-                <h3 class="count">2,500</h3>
-                <p>Homes for sale</p>
-              </div>
-              <div>
-                <h3 class="count">5000+</h3>
-                <p>Homes Recently Sold</p>
-              </div>
-              <div>
-                <h3 class="count">120+</h3>
-                <p>Price Reduced</p>
-              </div>
+  <section id="commercial">
+    <div class="container">
+      <div class="commercial-container">
+
+        <div>
+          <div class="top-line"></div>
+          <h2>You've found spaces where you can grow your business</h2>
+          <p>
+            Revitalizing Communities, Unlocking Prosperity: Shaping the Future of Commercial Real Estate Since 2008.
+            Explore the myriad ways we can collaborate and redefine success together. </p>
+          <br />
+          <button class="btn btn-dark">Discover More</button>
+          <br />
+          <div class="commercial-counts">
+            <div>
+              <h3 class="count">130+</h3>
+              <p>Commercial Properties Available</p>
+            </div>
+            <div>
+              <h3 class="count">257+</h3>
+              <p>Homes Recently Sold</p>
+            </div>
+            <div>
+              <h3 class="count">50+</h3>
+              <p>Price Adjustments</p>
             </div>
           </div>
         </div>
+        <div class="commercial-img">
+          <img src="./assets/commercial.jpg" alt="commercial" />
+        </div>
       </div>
-    </section>
-    <section id="about">
-      <div class="container about-container">
-        <div class="about-rating">
-          <div>
-            <!-- <img src="./assets/Logo.png" class="logo" alt="logo" /> -->
-            <h1>Four Gates Capital</h1>
-            <p>More then 45,000+ companies trust besnik</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-container">
+      <div class="about-rating">
+        <div>
+          <!-- <img src="./assets/Logo.png" class="logo" alt="logo" /> -->
+          <h1>Four Gates Capital</h1>
+          <p>More then 5k+ companies trust Four Gates Capital</p>
+        </div>
+        <div>
+          <div class="stars">
+            <img src="./assets/star.png" alt="" />
+            <img src="./assets/star.png" alt="" />
+            <img src="./assets/star.png" alt="" />
+            <img src="./assets/star.png" alt="" />
+            <img src="./assets/star.png" alt="" />
           </div>
-          <div>
-            <div class="stars">
-              <img src="./assets/star.png" alt="" />
-              <img src="./assets/star.png" alt="" />
-              <img src="./assets/star.png" alt="" />
-              <img src="./assets/star.png" alt="" />
-              <img src="./assets/star.png" alt="" />
+          <p>5 star Rating (1.5k+ Reviews)</p>
+        </div>
+      </div>
+
+      <div class="about-companies">
+        <img src="./assets/slack.svg" alt="" />
+        <img src="./assets/amazon.svg" alt="" />
+        <img src="./assets/woo.svg" alt="" />
+      </div>
+      <div class="about-guidelines">
+        <div class="about-guidelines--content">
+          <div class="top-line"></div>
+          <h2>About</h2>
+          <p>
+            Empowering Investments, Building Legacies: Navigating Real Estate Opportunities with Expertise and
+            Integrity. Get to know the driving force behind Four Gates Capital and the visionaries shaping our success.
+            Four Gates has invested in over a hundred homes in the greater bay area, deploying partner capital as well
+            as investment capital from friends and family.
+          </p>
+        </div>
+
+        <div class="about-guidelines--guides">
+          <div class="guide-box">
+            <div>
+              <img src="./assets/icon-1.png" alt="" />
+              <h3>Buyer Guides</h3>
+              <button class="btn">how to buy</button>
             </div>
-            <p>5 star Rating (2k+ Reviews)</p>
-          </div>
-        </div>
-
-        <div class="about-companies">
-          <img src="./assets/slack.svg" alt="" />
-          <img src="./assets/amazon.svg" alt="" />
-          <img src="./assets/woo.svg" alt="" />
-        </div>
-        <div class="about-guidelines">
-          <div class="about-guidelines--content">
-            <div class="top-line"></div>
-            <h2>About</h2>
-            <p>
-              Besnik has invested in over a hundred homes in the greater bay area, 
-              deploying partner agency as well as investment agency from friends and family. 
-              Besnik Agency has pursued a diverse set of strategies depending on the opportunities 
-              presented in the market and also the point in the real estate cycle the investment decision was   
-              being made in.  These strategies include buy-fix-sell, opportunistically lending directly to investors, 
-              holding rentals, and participating in real estate syndications. 
-            </p>
-          </div>
-
-          <div class="about-guidelines--guides">
-            <div class="guide-box">
-              <div>
-                <img src="./assets/icon-1.png" alt="" />
-                <h3>Buyer Guides</h3>
-                <button class="btn">how to buy</button>
-              </div>
-              <div>
-                <img src="./assets/icon-2.png" alt="" />
-                <h3>Renter Guides</h3>
-                <button class="btn">how to rent</button>
-              </div>
-              <div>
-                <img src="./assets/icon-3.png" alt="" />
-                <h3>Seller Guides</h3>
-                <button class="btn">how to sell</button>
-              </div>
+            <div>
+              <img src="./assets/icon-2.png" alt="" />
+              <h3>Renter Guides</h3>
+              <button class="btn">how to rent</button>
             </div>
-            <br />
-            <button class="btn btn-dark">See full guidelines</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="info-box">
-          <div>
-            <h3>Featured Properties</h3>
-            <span>Everything you need to know when you're looking</span>
-            <br />
-            <button class="btn">Get Started Now</button>
-          </div>
-          <img src="./assets/illustration.png" alt="mobile" />
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-container">
-          <div>
-            <h3>Product</h3>
-            <ul>
-              <li>
-                <a href="#">Listing</a>
-              </li>
-              <li>
-                <a href="#">Property</a>
-              </li>
-              <li>
-                <a href="#">Agents</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Resources</h3>
-            <ul>
-              <li>
-                <a href="#">Our Homes</a>
-              </li>
-              <li>
-                <a href="#">Member Stories</a>
-              </li>
-              <li>
-                <a href="#">Video</a>
-              </li>
-              <li>
-                <a href="#">Free trial</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Company</h3>
-            <ul>
-              <li>
-                <a href="#">Partnerships</a>
-              </li>
-              <li>
-                <a href="#">Terms of use</a>
-              </li>
-              <li>
-                <a href="#">Privacy</a>
-              </li>
-              <li>
-                <a href="#">Sitemap</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Get in touch</h3>
-            <span> You’ll find your next home, in any style you prefer. </span>
-            <div class="social-icons">
-              <img src="./assets/fb.png" alt="fb" />
-              <img src="./assets/tw.png" alt="tw" />
-              <img src="./assets/in.png" alt="in" />
+            <div>
+              <img src="./assets/icon-3.png" alt="" />
+              <h3>Seller Guides</h3>
+              <button class="btn">how to sell</button>
             </div>
           </div>
+          <br />
+          <button class="btn btn-dark">See full guidelines</button>
         </div>
-        <p class="copyright">Copyright 2022.com, All rights reserved.</p>
       </div>
-    </footer>
+    </div>
+  </section>
 
-  </body>
+  <section>
+    <div class="container">
+      <div class="info-box">
+        <div>
+          <h3>Featured Properties</h3>
+          <span>Everything you need to know when you're looking</span>
+          <br />
+          <button class="btn">Get Started Now</button>
+        </div>
+        <img src="./assets/illustration.png" alt="mobile" />
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div>
+          <h3>Product</h3>
+          <ul>
+            <li>
+              <a href="#">Listing</a>
+            </li>
+            <li>
+              <a href="#">Property</a>
+            </li>
+            <li>
+              <a href="#">Agents</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li>
+              <a href="#">Our Homes</a>
+            </li>
+            <li>
+              <a href="#">Member Stories</a>
+            </li>
+            <li>
+              <a href="#">Video</a>
+            </li>
+            <li>
+              <a href="#">Free trial</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li>
+              <a href="#">Partnerships</a>
+            </li>
+            <li>
+              <a href="#">Terms of use</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <span> You’ll find your next home, in any style you prefer. </span>
+          <div class="social-icons">
+            <img src="./assets/fb.png" alt="fb" />
+            <img src="./assets/tw.png" alt="tw" />
+            <img src="./assets/in.png" alt="in" />
+          </div>
+        </div>
+      </div>
+      <p class="copyright">Copyright 2022.com, All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
