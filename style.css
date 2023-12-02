@@ -668,3 +668,141 @@ footer {
 .copyright a{
   text-decoration: none;
 }
+
+/* Service Page */
+
+#service-page {
+  background-color: var(--bg-primary);
+  height: 100vh;
+}
+
+.service-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.service-page-container .service-page-left {
+  flex: 1;
+}
+
+.service-page-container .service-page-left h1 {
+  font-size: 2.2rem;
+  color: var(--text-heading);
+}
+
+.service-page-container .service-page-left p {
+  color: var(--text-normal);
+  line-height: 2rem;
+}
+
+.service-page-container .service-page-right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.service-page-right img {
+  width: 100%;
+  max-width: 550px;
+}
+
+@media (max-width: 900px) {
+  #service-page {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .service-page-container {
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .service-page-container .service-page-left h1 {
+    font-size: 2rem;
+  }
+
+  .service-page-container .service-page-left p {
+    font-size: 0.9rem;
+  }
+}
+
+.container-box{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.invest-tgr-container {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.invest-tgr-container div {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.invest-tgr-img {
+  display: flex;
+  align-items: center;
+}
+
+.invest-tgr-container img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.invest-tgr-container ul {
+  list-style-type: circle;
+}
+
+
+
+ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.invest-tgr-container p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.invest-tgr-counts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .invest-tgr-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
