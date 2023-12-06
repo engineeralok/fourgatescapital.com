@@ -1028,3 +1028,256 @@ ul li {
     margin-left: auto;
   }
 }
+/* ---------residential-------- */
+
+.residential-page-right{
+  width: 100%;
+  max-width: 600px;
+}
+.container-box-map{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.residential-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.residential-map-img {
+  display: flex;
+  align-items: center;
+}
+
+.residential-map img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.container-box-real-estate-investment{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.real-estate-investment-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.real-estate-investment-container div {
+  flex: 1;
+  align-items: center;
+}
+
+.real-estate-investment-img {
+  display: flex;
+  align-items: center;
+}
+
+.real-estate-investment-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.real-estate-investment-container ul {
+  list-style-type: circle;
+}
+
+
+
+ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.real-estate-investment-container p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.real-estate-investment-counts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .real-estate-investment-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.container-box-trustee-sale-investments{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.trustee-sale-investments-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.trustee-sale-investments-container div {
+  flex: 1;
+  align-items: center;
+}
+
+.trustee-sale-investments-img {
+  display: flex;
+  align-items: center;
+}
+
+.trustee-sale-investments-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.trustee-sale-investments-container ul {
+  list-style-type: circle;
+}
+
+
+
+ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.trustee-sale-investments-container p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.trustee-sale-investments-counts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .rental-properties-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container-box-rental-properties{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.rental-properties-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.rental-properties-container div {
+  flex: 1;
+  align-items: center;
+}
+
+.rental-properties-img {
+  display: flex;
+  align-items: center;
+}
+
+.rental-properties-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.rental-properties-container ul {
+  list-style-type: circle;
+}
+
+
+
+ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.rental-properties-container p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.rental-properties-counts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .rental-properties-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
