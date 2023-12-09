@@ -1199,7 +1199,7 @@ ul li {
 }
 
 @media (max-width: 900px) {
-  .rental-properties-container {
+  .trustee-sale-investments-container {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
@@ -1274,6 +1274,229 @@ ul li {
 
 @media (max-width: 900px) {
   .rental-properties-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container-box-distressed-notes{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.distressed-notes-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.distressed-notes-container div {
+  flex: 1;
+  align-items: center;
+}
+
+.distressed-notes-img {
+  display: flex;
+  align-items: center;
+}
+
+.distressed-notes-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.distressed-notes-container ul {
+  list-style-type: circle;
+}
+
+
+
+ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.distressed-notes-container p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.distressed-notes-counts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .distressed-notes-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+.container-box-san-jose-development{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.san-jose-development-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.san-jose-development-container div {
+  flex: 1;
+  align-items: center;
+}
+
+.san-jose-development-img {
+  display: flex;
+  align-items: center;
+}
+
+.san-jose-development-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.san-jose-development-container ul {
+  list-style-type: circle;
+}
+
+
+
+ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.san-jose-development-container p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.san-jose-development-counts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .san-jose-development-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container-box-funds-and-syndications{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.funds-and-syndications-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.funds-and-syndications-container div {
+  flex: 1;
+  align-items: center;
+}
+
+.funds-and-syndications-img {
+  display: flex;
+  align-items: center;
+}
+
+.funds-and-syndications-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.358);
+}
+
+
+.funds-and-syndications-container ul {
+  list-style-type: circle;
+}
+
+
+
+ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.funds-and-syndications-container p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.funds-and-syndications-counts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .funds-and-syndications-container {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
