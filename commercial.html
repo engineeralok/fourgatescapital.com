@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Real-Estate Landing Page</title>
+        <link rel="stylesheet" href="./style.css" />
+        <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+        <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+        <!-- Scroll Trigger is needed for Scroll Effects -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+        <!-- Three.js is needed for 3d Effects -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    
+        <!-- ControlKit is needed for Debug Panel -->
+        <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    
+        <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+    
+    
+    </head>
+    
+<body>
+    <header>
+        <nav class="container">
+            <!-- <img src="./assets/Logo.png" alt="Logo" id="logo" /> -->
+            <h2>Four Gates Capital</h2>
+            <img src="./assets/menu.svg" alt="menu" onclick="onToggle()" id="toggle-btn" />
+            <div class="nav-items -right-100">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!-- <li>
+                  <a href="#feature">Feature</a>
+                </li> -->
+                    <li>
+                        <a href="service.html">Service</a>
+                    </li>
+                    <li>
+                        <a href="residental.html">Residential</a>
+                    </li>
+                    <li>
+                        <a href="commercial.html"><b>Commercial</b></a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+                <!-- <div>
+                <button class="btn">Sign up</button>
+                <button class="btn btn-dark">Register</button>
+              </div> -->
+            </div>
+        </nav>
+    </header>
+
+    <section id="service-page">
+        <div class="container service-page-container">
+
+            <div class="service-page-left">
+                <p>Welcome to Four Gates Capital</p>
+                <h1> Unlocking Value, Building Futures. FGC's Decade-Long Journey in Commercial Real Estate.</h1>
+                <p>
+                    With a firm base of experience and capital from investing in the residential real estate sector, FGC opportunistically invests in commercial real estate.  Below are some representative CRE asset classes and projects we have invested in over the past decade.
+                </p>
+                
+            </div>
+            <div class=" residential-page-right service-page-right">
+                <img src="./assets/commercial-page-img.png" alt="residenltal" />
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="container">
+          <div class="info-box">
+            <div>
+              <h3>Featured Properties</h3>
+              <span>Everything you need to know when you're looking</span>
+              <br />
+              <button class="btn">Contact Us Now</button>
+            </div>
+            <img src="./assets/illustration.png" alt="mobile" />
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<!-------------------footer-------------------->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>
+                            <a href="#">INVEST TOGETHER</a>
+                        </li>
+                        <li>
+                            <a href="#">BROKERAGE SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#">CORPORATE LEASE WITH SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#">PROPERTY MANAGEMENT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Residential</h3>
+                    <ul>
+                        <li>
+                            <a href="#">MAP OF HOMES WE HAVE ACQUIRED</a>
+                        </li>
+                        <li>
+                            <a href="#">SAMPLE OF RENTAL PROPERTIES</a>
+                        </li>
+                        <li>
+                            <a href="#">SAMPLE FLIP #1</a>
+                        </li>
+                        <li>
+                            <a href="#">RSESIDENTIAL PROPERTIES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Commercial</h3>
+                    <ul>
+                        <li>
+                            <a href="#">DISTRESSED NOTES</a>
+                        </li>
+                        <li>
+                            <a href="#">777 WEST SAN CARLOS SAN JOSE DEVELOPMENT</a>
+                        </li>
+                        <li>
+                            <a href="#">FUNDS AND SYNDICATIONS</a>
+                        </li>
+                        <!-- <li>
+              <a href="#">Sitemap</a>
+            </li> -->
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Get in touch</h3>
+                    <span> You’ll find your next home, in any style you prefer. </span>
+                    <div class="social-icons">
+                        <img src="./assets/fb.png" alt="fb" />
+                        <img src="./assets/tw.png" alt="tw" />
+                        <img src="./assets/in.png" alt="in" />
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright 2023 | <a href="https://fourgatescapital.com"
+                    target="_blank">fourgatescapital.com</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const nav = document.querySelector(".nav-items");
+        const toggleBtn = document.querySelector("#toggle-btn");
+
+        function onToggle() {
+            nav.classList.toggle("-right-100");
+            toggleBtn.src = nav.classList.contains("-right-100")
+                ? "./assets/menu.svg"
+                : "./assets/close.svg";
+            document.querySelectorAll(".nav-items a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    nav.classList.add("-right-100");
+                    toggleBtn.src = "./assets/menu.svg";
+                });
+            });
+        }
+
+        Shery.mouseFollower({
+            //Parameters are optional.
+            skew: false,
+            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+            duration: 0.9,
+        });
+
+        Shery.makeMagnet(".magnet-target" /* Element to target.*/, {
+            //Parameters are optional.
+            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+            duration: 1,
+        });
+
+        Shery.textAnimate(".text-target" /* Element to target.*/, {
+            //Parameters are optional.
+            style: 1,
+            y: 10,
+            delay: 0.1,
+            duration: 2,
+            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+            multiplier: 0.1,
+        });
+
+        Shery.imageEffect(".img", {
+            style: 4,
+            // debug: true,
+            // gooey: true,
+        });
+
+        // const sr = ScrollReveal({
+        //   distance: "80px",
+        //   origin: "left",
+        //   duration: 2500,
+        //   opacity: 0,
+        //   delay: 400,
+        // });
+        // sr.reveal(".home-left");
+        // sr.reveal(".home-right", { delay: 800, origin: "right" });
+        // sr.reveal(".nav-items", { delay: 100, origin: "top" });
+        // sr.reveal("#logo", { delay: 100, origin: "bottom" });
+    </script>
+</body>
+</html>
