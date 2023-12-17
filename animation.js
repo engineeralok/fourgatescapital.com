@@ -1,3 +1,7 @@
+// AOS.init({
+//     once: true,
+// });
+
 var cursor = document.getElementById('cursor');
 cursor.style.display = 'none';
 var lastX = 0;
