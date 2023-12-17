@@ -22,6 +22,20 @@
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  background-color: white;
+}
+
+#cursor {
+  display: none;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  filter: invert(1) contrast(1.5);
+  z-index: 1000 !important;
 }
 
 li {
@@ -665,7 +679,7 @@ footer {
   margin-top: 2.5rem;
 }
 
-.copyright a{
+.copyright a {
   text-decoration: none;
 }
 
@@ -733,7 +747,7 @@ footer {
   }
 }
 
-.container-box-invest{
+.container-box-invest {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -806,7 +820,7 @@ ul li {
   }
 }
 
-.container-box-brokerage{
+.container-box-brokerage {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -881,7 +895,7 @@ ul li {
 }
 
 
-.container-box-lease{
+.container-box-lease {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -955,7 +969,7 @@ ul li {
 }
 
 
-.container-box-property{
+.container-box-property {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1028,13 +1042,15 @@ ul li {
     margin-left: auto;
   }
 }
+
 /* ---------residential-------- */
 
-.residential-page-right{
+.residential-page-right {
   width: 100%;
   max-width: 600px;
 }
-.container-box-map{
+
+.container-box-map {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1061,7 +1077,7 @@ ul li {
 }
 
 
-.container-box-real-estate-investment{
+.container-box-real-estate-investment {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1134,7 +1150,8 @@ ul li {
     margin-left: auto;
   }
 }
-.container-box-trustee-sale-investments{
+
+.container-box-trustee-sale-investments {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1208,7 +1225,7 @@ ul li {
   }
 }
 
-.container-box-rental-properties{
+.container-box-rental-properties {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1282,7 +1299,7 @@ ul li {
   }
 }
 
-.container-box-distressed-notes{
+.container-box-distressed-notes {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1357,7 +1374,7 @@ ul li {
 }
 
 
-.container-box-san-jose-development{
+.container-box-san-jose-development {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1431,7 +1448,7 @@ ul li {
   }
 }
 
-.container-box-funds-and-syndications{
+.container-box-funds-and-syndications {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;

@@ -6,27 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real-Estate Landing Page</title>
+
     <link rel="stylesheet" href="./style.css" />
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- Scroll Trigger is needed for Scroll Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Three.js is needed for 3d Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-
-    <!-- ControlKit is needed for Debug Panel -->
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-
-    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
-
 
 </head>
 
 <body>
+    <div id="cursor"></div>
     <header>
         <nav class="container">
             <!-- <img src="./assets/Logo.png" alt="Logo" id="logo" /> -->
@@ -163,28 +152,22 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
     <section>
         <div class="container">
             <div class="info-box">
                 <div>
-                    <h3>Featured Properties</h3>
-                    <span>Everything you need to know when you're looking</span>
+                    <h3 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">Featured Properties</h3>
+                    <span data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">Everything you need to know
+                        when you're looking</span>
                     <br />
-                    <button class="btn">Contact Us Now</button>
+                    <button class="btn" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">Contact Us
+                        Now</button>
                 </div>
-                <img src="./assets/illustration.png" alt="mobile" />
+                <img src="./assets/illustration.png" alt="mobile" data-aos="zoom-in" data-aos-delay="400"
+                    data-aos-duration="800" />
             </div>
         </div>
     </section>
-
-
 
     <!-------------------start footer-------------------->
     <footer>
@@ -258,9 +241,9 @@
 
     <!-------------end footer ----------->
 
-
-
     <script>
+        AOS.init();
+
         const nav = document.querySelector(".nav-items");
         const toggleBtn = document.querySelector("#toggle-btn");
 
@@ -277,47 +260,9 @@
             });
         }
 
-        Shery.mouseFollower({
-            //Parameters are optional.
-            skew: false,
-            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-            duration: 0.9,
-        });
-
-        Shery.makeMagnet(".magnet-target" /* Element to target.*/, {
-            //Parameters are optional.
-            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-            duration: 1,
-        });
-
-        Shery.textAnimate(".text-target" /* Element to target.*/, {
-            //Parameters are optional.
-            style: 1,
-            y: 10,
-            delay: 0.1,
-            duration: 2,
-            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-            multiplier: 0.1,
-        });
-
-        Shery.imageEffect(".img", {
-            style: 4,
-            // debug: true,
-            // gooey: true,
-        });
-
-        // const sr = ScrollReveal({
-        //   distance: "80px",
-        //   origin: "left",
-        //   duration: 2500,
-        //   opacity: 0,
-        //   delay: 400,
-        // });
-        // sr.reveal(".home-left");
-        // sr.reveal(".home-right", { delay: 800, origin: "right" });
-        // sr.reveal(".nav-items", { delay: 100, origin: "top" });
-        // sr.reveal("#logo", { delay: 100, origin: "bottom" });
     </script>
+
+    <script src="./animation.js"></script>
 </body>
 
 </html>
