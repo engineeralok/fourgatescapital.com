@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Estate Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <!-- <img src="./assets/Logo.png" alt="Logo" id="logo" /> -->
+            <h2>Four Gates Capital</h2>
+            <img src="./assets/menu.svg" alt="menu" onclick="onToggle()" id="toggle-btn" />
+            <div class="nav-items -right-100">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!-- <li>
+                  <a href="#feature">Feature</a>
+                </li> -->
+                    <li>
+                        <a href="service.html">Service</a>
+                    </li>
+                    <li>
+                        <a href="residental.html">Residential</a>
+                    </li>
+                    <li>
+                        <a href="commercial.html">Commercial</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><b>About</b></a>
+                    </li>
+                    <!-- <li>
+                        <a href="#contact">contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about_us_page">
+        <div class="about_banner">
+            <img src="./assets/about_banner.jpg" alt="about_banner">
+            <h2>ABOUT US</h2>
+            <h5>who we are</h5>
+        </div>
+    </section>
+
+    <section>
+        <div class="about-us container">
+            <div class="top">
+                <div class="top-line"></div>
+                <h2>Meet Our Team</h2>
+            </div>
+            <div class="bottem">
+                <div class="about-us-left">
+                    <img src="./assets/about-us.png" alt="about-us">
+                </div>
+                <div class=" about-us-right">
+                    <p>Four Gates has invested in over a hundred homes in the greater bay area, deploying partner
+                        capital as
+                        well as investment capital from friends and family. Four Gates Capital has pursued a diverse set
+                        of
+                        strategies depending on the opportunities presented in the market and also the point in the real
+                        estate cycle the investment decision was being made in. These strategies include buy-fix-sell,
+                        opportunistically lending directly to investors, holding rentals, and participating in real
+                        estate
+                        syndications.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team container">
+        <div class="team-left">
+            <img src="./assets/Ashish.jpg" alt="">
+            <h3>Ashish Patel</h3>
+            <p>Ashish Patel is a founding member of Four Gates Capital. At Four Gates, Ashish leads marketing,
+                investment sourcing, and real estate finance. Ashish holds a California Broker License. Prior to
+                co-founding Four Gates, Ashish worked at Mizuho Securities and Bank of Tokyo Mitsubishi helping to
+                manage their alternative investment portfolio of various asset-backed fixed-income securities. Ashish
+                has a BA in Economics from UC Berkeley and MS in Computational Finance from Carnegie Mellon. Ashish
+                lives in Los Altos, CA with his wife, three children, and five chickens. He volunteers as the PTA
+                Financial Secretary for their local elementary school and participates in weekly pick-up basketball.</p>
+        </div>
+        <div class="team-right">
+            <img src="./assets/jay.png" alt="">
+            <h3>Jay Patel</h3>
+            <p>Jay Patel, CPA is a founding member of Four Gates Capital. At Four Gates, Jay focuses on property/asset
+                due diligence, valuation, tax and legal compliance, and risk management. Prior to co-founding Four Gates
+                with Ashish, Jay worked at Deutsche Bank's fixed income trading team in New York and MF Analytics, a
+                boutique structured credit analytics firm, in Cambridge, MA. Jay has a B.S in Mechanical Engineering and
+                a B.A in South and Southeast Asian Studies from UC Berkeley, and an M.S. in Agricultural and Resource
+                Economics from UC Davis. In his free time, he is an avid rock climber and has been practicing
+                vipassana/insight meditation for over 10 years. He also hosts a website dedicated to spreading financial
+                literacy: www.richunclelessons.com</p>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="info-box">
+                <div>
+                    <h3>Featured Properties</h3>
+                    <span>Everything you need to know when you're looking</span>
+                    <br />
+                    <button class="btn">Contact Us Now</button>
+                </div>
+                <img src="./assets/illustration.png" alt="mobile" />
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>
+                            <a href="#">INVEST TOGETHER</a>
+                        </li>
+                        <li>
+                            <a href="#">BROKERAGE SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#">CORPORATE LEASE WITH SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#">PROPERTY MANAGEMENT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Residential</h3>
+                    <ul>
+                        <li>
+                            <a href="#">MAP OF HOMES WE HAVE ACQUIRED</a>
+                        </li>
+                        <li>
+                            <a href="#">SAMPLE OF RENTAL PROPERTIES</a>
+                        </li>
+                        <li>
+                            <a href="#">SAMPLE FLIP #1</a>
+                        </li>
+                        <li>
+                            <a href="#">RSESIDENTIAL PROPERTIES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Commercial</h3>
+                    <ul>
+                        <li>
+                            <a href="#">DISTRESSED NOTES</a>
+                        </li>
+                        <li>
+                            <a href="#">777 WEST SAN CARLOS SAN JOSE DEVELOPMENT</a>
+                        </li>
+                        <li>
+                            <a href="#">FUNDS AND SYNDICATIONS</a>
+                        </li>
+                        <!-- <li>
+                  <a href="#">Sitemap</a>
+                </li> -->
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Get in touch</h3>
+                    <span> You’ll find your next home, in any style you prefer. </span>
+                    <div class="social-icons">
+                        <img src="./assets/fb.png" alt="fb" />
+                        <img src="./assets/tw.png" alt="tw" />
+                        <img src="./assets/in.png" alt="in" />
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright 2023 | <a href="https://fourgatescapital.com"
+                    target="_blank">fourgatescapital.com</a>. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
