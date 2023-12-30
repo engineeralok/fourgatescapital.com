@@ -2,31 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real-Estate Landing Page</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- Scroll Trigger is needed for Scroll Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Three.js is needed for 3d Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-
-    <!-- ControlKit is needed for Debug Panel -->
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-
-    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
-
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
 
 </head>
 
 <body>
+    <div id="cursor"></div>
     <header>
         <nav class="container">
             <!-- <img src="./assets/Logo.png" alt="Logo" id="logo" /> -->
@@ -63,23 +52,24 @@
     <section class="about_us_page">
         <div class="about_banner">
             <img src="./assets/about_banner.jpg" alt="about_banner">
-            <h2>ABOUT US</h2>
-            <h5>who we are</h5>
+            <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">ABOUT US</h2>
+            <h5 data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">who we are</h5>
         </div>
     </section>
 
     <section>
         <div class="about-us container">
-            <div class="top">
+            <div class="top" data-aos="zoom-in" data-aos-delay="350" data-aos-duration="800">
                 <div class="top-line"></div>
-                <h2>Meet Our Team</h2>
+                <h2 data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">Meet Our Team</h2>
             </div>
             <div class="bottem">
-                <div class="about-us-left">
+                <div class="about-us-left" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
                     <img src="./assets/about-us.png" alt="about-us">
                 </div>
                 <div class=" about-us-right">
-                    <p>Four Gates has invested in over a hundred homes in the greater bay area, deploying partner
+                    <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">Four Gates has invested in over
+                        a hundred homes in the greater bay area, deploying partner
                         capital as
                         well as investment capital from friends and family. Four Gates Capital has pursued a diverse set
                         of
@@ -96,10 +86,11 @@
     </section>
 
     <section class="team container">
-        <div class="team-left">
-            <img src="./assets/Ashish.jpg" alt="">
-            <h3>Ashish Patel</h3>
-            <p>Ashish Patel is a founding member of Four Gates Capital. At Four Gates, Ashish leads marketing,
+        <div class="team-left team-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <img src="./assets/Ashish.jpg" alt="" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <h3 data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">Ashish Patel</h3>
+            <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">Ashish Patel is a founding member of
+                Four Gates Capital. At Four Gates, Ashish leads marketing,
                 investment sourcing, and real estate finance. Ashish holds a California Broker License. Prior to
                 co-founding Four Gates, Ashish worked at Mizuho Securities and Bank of Tokyo Mitsubishi helping to
                 manage their alternative investment portfolio of various asset-backed fixed-income securities. Ashish
@@ -107,10 +98,11 @@
                 lives in Los Altos, CA with his wife, three children, and five chickens. He volunteers as the PTA
                 Financial Secretary for their local elementary school and participates in weekly pick-up basketball.</p>
         </div>
-        <div class="team-right">
-            <img src="./assets/jay.png" alt="">
-            <h3>Jay Patel</h3>
-            <p>Jay Patel, CPA is a founding member of Four Gates Capital. At Four Gates, Jay focuses on property/asset
+        <div class="team-right team-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <img src="./assets/jay.png" alt="" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <h3 data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">Jay Patel</h3>
+            <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">Jay Patel, CPA is a founding member of
+                Four Gates Capital. At Four Gates, Jay focuses on property/asset
                 due diligence, valuation, tax and legal compliance, and risk management. Prior to co-founding Four Gates
                 with Ashish, Jay worked at Deutsche Bank's fixed income trading team in New York and MF Analytics, a
                 boutique structured credit analytics firm, in Cambridge, MA. Jay has a B.S in Mechanical Engineering and
@@ -127,12 +119,15 @@
         <div class="container">
             <div class="info-box">
                 <div>
-                    <h3>Featured Properties</h3>
-                    <span>Everything you need to know when you're looking</span>
+                    <h3 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">Featured Properties</h3>
+                    <span data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">Everything you need to know
+                        when you're looking</span>
                     <br />
-                    <button class="btn">Contact Us Now</button>
+                    <button class="btn" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">Contact Us
+                        Now</button>
                 </div>
-                <img src="./assets/illustration.png" alt="mobile" />
+                <img src="./assets/illustration.png" alt="mobile" data-aos="zoom-in" data-aos-delay="400"
+                    data-aos-duration="800" />
             </div>
         </div>
     </section>
@@ -206,6 +201,29 @@
                     target="_blank">fourgatescapital.com</a>. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+
+        const nav = document.querySelector(".nav-items");
+        const toggleBtn = document.querySelector("#toggle-btn");
+
+        function onToggle() {
+            nav.classList.toggle("-right-100");
+            toggleBtn.src = nav.classList.contains("-right-100")
+                ? "./assets/menu.svg"
+                : "./assets/close.svg";
+            document.querySelectorAll(".nav-items a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    nav.classList.add("-right-100");
+                    toggleBtn.src = "./assets/menu.svg";
+                });
+            });
+        }
+
+    </script>
+
+    <script src="./animation.js"></script>
 </body>
 
 </html>
