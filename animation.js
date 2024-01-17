@@ -10,42 +10,42 @@ var lastX = 0;
 var lastY = 0;
 var isFirstMove = true;
 
-function updateCursorPosition(e) {
-    cursor.style.display = 'block';
-    lastX = e.clientX - cursor.offsetWidth / 2;
-    lastY = e.clientY - cursor.offsetHeight / 2;
+// function updateCursorPosition(e) {
+//     cursor.style.display = 'block';
+//     lastX = e.clientX - cursor.offsetWidth / 2;
+//     lastY = e.clientY - cursor.offsetHeight / 2;
 
-    // Show the cursor when there's mouse movement
-    // cursor.style.display = isFirstMove ? 'block' : 'none';
+//     // Show the cursor when there's mouse movement
+//     // cursor.style.display = isFirstMove ? 'block' : 'none';
 
-    cursor.style.height = "15px";
-    cursor.style.width = "15px";
+//     cursor.style.height = "15px";
+//     cursor.style.width = "15px";
 
-    gsap.to(cursor, { duration: 1, x: lastX, y: lastY, ease: "power2.out" });
+//     gsap.to(cursor, { duration: 1, x: lastX, y: lastY, ease: "power2.out" });
 
-    // Set a timer to hide the cursor after the first movement (200ms delay)
-    if (isFirstMove) {
-        isFirstMove = false;
-    }
-}
+//     // Set a timer to hide the cursor after the first movement (200ms delay)
+//     if (isFirstMove) {
+//         isFirstMove = false;
+//     }
+// }
 
-document.addEventListener('mousemove', updateCursorPosition);
+// document.addEventListener('mousemove', updateCursorPosition);
 
-document.addEventListener('scroll', function () {
-    cursor.style.display = 'block';
-    gsap.to(cursor, { duration: 0.2, x: lastX, y: lastY, ease: "power2.out" });
-});
+// document.addEventListener('scroll', function () {
+//     cursor.style.display = 'block';
+//     gsap.to(cursor, { duration: 0.2, x: lastX, y: lastY, ease: "power2.out" });
+// });
 
-// Check if it's the first page load
-if (document.readyState === 'complete') {
-    // If it's the first load, set display to 'none'
-    cursor.style.display = 'none';
-} else {
-    // If it's not the first load, wait for the 'load' event and then set display to 'none'
-    window.addEventListener('load', function () {
-        cursor.style.display = 'none';
-    });
-}
+// // Check if it's the first page load
+// if (document.readyState === 'complete') {
+//     // If it's the first load, set display to 'none'
+//     cursor.style.display = 'none';
+// } else {
+//     // If it's not the first load, wait for the 'load' event and then set display to 'none'
+//     window.addEventListener('load', function () {
+//         cursor.style.display = 'none';
+//     });
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
     const carousels = document.querySelectorAll('.carousel-container');
